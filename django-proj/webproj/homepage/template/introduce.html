@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>자기소개 페이지</title>
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+        <style>
+            body {
+                background-color: cadetblue;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2>안녕하세요, 제 이름은 {{ name }}입니다.</h2>
+        <b>{{ intro }}</b>
+        <b>{{ major }}</b>
+        <h3>MBTI</h3>
+        <img src="{% static 'MBTI.png' %}" alt="MBTI">
+    </body>
+</html>

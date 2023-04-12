@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>Update Coffee</title>
+    </head>
+
+    <body>
+        <h1>Update Coffee</h1>
+        <form method="POST">
+            {% csrf_token %}
+            {{ coffee_form.as_p }}
+            <input type="submit" value="Update">
+        </form>
+    </body>
+</html>
